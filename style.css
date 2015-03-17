@@ -1,0 +1,16 @@
+body {
+	background-color:#6C7A89;
+	-webkit-font-smoothing: antialiased;
+	padding:10px;
+}
+.pure-g div {
+	box-sizing:border-box;
+    -webkit-boxing-sizing:border-box;
+    -moz-box-sizing:border-box;
+    background-color:#ECF0F1;
+    color:#22313F;
+    margin-bottom:5px;
+}
+h1, p {
+	font-family:'Open Sans';
+}
