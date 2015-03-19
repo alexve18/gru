@@ -1,10 +1,21 @@
-body {
     color: #777;
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family:"Open Sans";
 }
 
+body {
+    color: #666;
+    background-color:#FEFEFE;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    padding:5px;
+    text-align:justify;
 }
 
 /*
@@ -52,6 +63,7 @@ The content `<div>` is where all your content goes.
      text-align: center;
      padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
+
  }
     .header h1 {
         margin: 0.2em 0;
@@ -60,15 +72,15 @@ The content `<div>` is where all your content goes.
     }
      .header h2 {
         font-weight: 300;
-        color: #ccc;
+        color: #999;
         padding: 0;
-        margin-top: 0;
+        margin-top: 0;    
     }
 
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #888;
+    color: #777;
 }
 
 
@@ -121,6 +133,8 @@ appears on the left side of the page.
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
             background: #333;
+            color:#D91E18;
+            transition:0.4s all;
         }
 
     /*
@@ -128,7 +142,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        background: #D91E18;
     }
         /*
         This styles a link within a selected menu item `<li>`.
