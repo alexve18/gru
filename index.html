@@ -7,8 +7,11 @@
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/side-menu.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
+    <a name="top"></a>
         <div id="layout">
             <!-- Menu toggle -->
             <a href="#menu" id="menuLink" class="menu-link">
@@ -30,42 +33,68 @@
             </div>
             <div id="main">
                 <div class="header">
-                <a href="#top"></a>
                     <h1>Maraþonhlaup Tækniskólans</h1>
                     <h2>Árlegt hlaup til stuðnings langveikra barna</h2>
                 </div>
                 <div class="content">
-                    <a href="#um"></a>
+                    <a name="um"></a>
                     <h2 class="content-subhead">Um okkur</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <a href="#signup"></a>
+                    <a name="signup"></a>
                     <h2 class="content-subhead">Skrá sig</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     <div class="pure-g">
                         <div class="pure-u-1 pure-u-md-11-24">
-                            <h2 class="content-subhead">Lorem ipsum.</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mauris sapien, commodo vel dui efficitur, varius sagittis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum euismod elit, eget suscipit purus gravida sed. Quisque vitae lacus mi. Sed eros mi, iaculis sed arcu ac, pharetra elementum lacus. Aenean eget erat interdum est rhoncus elementum. Curabitur feugiat molestie diam, quis porttitor mauris eleifend egestas. 
-                            </p>
+                            <h2 class="content-subhead">Skrá sig í hlaupið.</h2>
+                            <form class="pure-form pure-form-aligned">
+                            <center> <!-- Center a shit, en afaik virkar ekkert annað í PureCSS :( -->
+                                <fieldset class="pure-group">
+                                        <input id="name" type="text" placeholder="Kennitala" required class="pure-u-1-2 pure-u-md-3-4 pure-u-lg-3-4">
+                                        <input id="password" type="password" placeholder="Heimilsfang" required class="pure-u-1-2 pure-u-md-3-4 pure-u-lg-3-4">
+                                        <input id="email" type="email" placeholder="Email" required class="pure-u-1-2 pure-u-md-3-4 pure-u-lg-3-4">
+                                </fieldset>
+                                <button type="submit" class="pure-u-1-2 pure-u-md-3-4 pure-u-lg-3-4 pure-button pure-button-primary">Senda</button>
+                            </center>
+                            </form>
                         </div>
+
                         <div class="pure-u-1 pure-u-md-2-24">
-                            
                         </div>
+
                         <div class="pure-u-1 pure-u-md-11-24">
-                            <h2 class="content-subhead">Lorem ipsum.</h2>
+                            <h2 class="content-subhead">Skrá sig á póstlista.</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mauris sapien, commodo vel dui efficitur, varius sagittis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum euismod elit, eget suscipit purus gravida sed. Quisque vitae lacus mi. Sed eros mi, iaculis sed arcu ac, pharetra elementum lacus. Aenean eget erat interdum est rhoncus elementum. Curabitur feugiat molestie diam, quis porttitor mauris eleifend egestas. 
                             </p>
+                            <form class="pure-form">
+                                <div class="pure-u-1-1">
+                                    <center>
+                                    <input type="email" placeholder="Email" required class="pure-u-14-24">
+                                    <button type="submit" class="pure-u-6-24 pure-button pure-button-primary">Senda</button>
+                                    </center>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <h2 class="content-subhead">Hafa samband</h2>
+                    <a name="contact"></a>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+                    <form class="pure-form">
+                    <center>
+                        <fieldset class="pure-group">
+                            <input type="text" class="pure-input-1-2" placeholder="Nafn" required>
+                            <input type="text" class="pure-input-1-2" placeholder="Email" required>
+                            <textarea class="pure-input-1-2" placeholder="Skilaboð"></textarea>
+                        </fieldset>
+                    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Senda</button>
+                    </center>
+                    </form>
                 </div>
             </div>
         </div>
