@@ -3,17 +3,9 @@ html, button, input, select, textarea,
     font-family:"Open Sans";
 }
 
-.pure-button {
-    background-color:#E74C3C;
-}
-
 body {
     color: #666;
     background-color:#FEFEFE;
-}
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
 }
 
 p {
@@ -21,10 +13,22 @@ p {
     text-align:justify;
 }
 
+.pure-button {
+    background-color:#E74C3C;
+}
+
+img {
+    position:relative;
+    z-index: 5;
+    margin-top:-70px;
+    margin-bottom:-250px;
+    tramsition: 2s all;
+}
+
 /*
 Add transition to containers so they can push in and out.
 */
-#layout,
+#layout
 #menu,
 .menu-link {
     -webkit-transition: all 0.2s ease-out;
@@ -261,5 +265,19 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         position: relative;
         left: 150px;
     }
+    .runner {
+        display:none;
+    }
 }
-
+@media (max-width: 1450px) {
+    .runner {
+        left:-80%;
+        transition:2s all;
+    }
+}
+@media (min-width: 1450px) {
+    .runner {
+        left:-4%;
+        transition:2s all;
+    }
+}
