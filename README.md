@@ -10,3 +10,4 @@ Layout created using [Pure CSS][pure] compiled from the [pure-site][] project.
 
 See the LICENSE file for license text and copyright information.
 
+Team: Óðinn & Emil.
