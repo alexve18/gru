@@ -68,7 +68,7 @@ The content `<div>` is where all your content goes.
     color: #333;
     text-align: center;
     padding: 2.5em 2em 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #DDD;
 
  }
 .header h1 {
@@ -89,6 +89,24 @@ The content `<div>` is where all your content goes.
     color: #777;
 }
 
+.footer {
+    border-top:1px solid #DDD;
+    background-color:#FEFEFE;
+    font-size:14px;
+    font-family:Calibri;
+}
+.left {
+    margin-bottom:-15px;
+    text-indent:20px;
+}
+.right {
+    text-align:right;
+    margin-bottom:-15px;
+    margin-right:20px;
+}
+.bot {
+    margin-bottom:10px;
+}
 
 
 /*
