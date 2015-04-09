@@ -298,5 +298,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     .runner {
         left:-4%;
         transition:2s all;
+        animation:runnerEnter 2s ease;
     }
+}
+
+@keyframes runnerEnter {
+    from { left:-80%; }
+    to { left:-4%; }
 }
