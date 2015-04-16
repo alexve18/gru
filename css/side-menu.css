@@ -23,7 +23,9 @@ img {
     margin-top:-70px;
     margin-bottom:-250px;
 }
-
+a {
+    text-decoration:none;
+}
 /*
 Add transition to containers so they can push in and out.
 */
@@ -280,6 +282,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         * Tap the menu to trigger the active state.
         * Make the window large again.
     */
+    body {
+        font-size:16px;
+    }
     #layout.active {
         position: relative;
         left: 150px;
