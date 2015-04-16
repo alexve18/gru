@@ -1,7 +1,7 @@
 Pure CSS VSH Prototype
 ========================
 
-A prototype for the final assignment in a responsive web design class.
+The final assignment in a responsive web design class.
 
 Layout created using [Pure CSS][pure] compiled from the [pure-site][] project.
 
