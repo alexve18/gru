@@ -1,0 +1,31 @@
+body {
+  color: #666;
+  background-color: #fefefe;
+}
+
+.login, .register {
+  width: 360px;
+  margin:10px;
+  float:left;
+}
+
+h2, h3, p {
+  text-align:center;
+}
+
+p {
+  margin-top:-20px;
+}
+.wrapperoni {
+  width:370px;
+  margin:auto;
+  font-family: "Open Sans";
+}
+
+.pure-button {
+  background-color: #e74c3c;
+}
+
+.hidden {
+  display:none;
+}
