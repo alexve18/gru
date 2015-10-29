@@ -29,9 +29,16 @@
           <p>Smelltu <a href="#" class="loginClick">hér</a> til að nýskrá þig</p>
           <fieldset class="pure-group">
               <input type="text" class="pure-input-1" required placeholder="Kennitala" name="loginId">
-              <input type="text" class="pure-input-1" required placeholder="Lykilorð" name="loginPassword">
+              <input type="password" class="pure-input-1" required placeholder="Lykilorð" name="loginPassword">
           </fieldset>
           <button type="submit" class="pure-button pure-input-1 pure-button-primary">Innskráning</button>
+          <?php
+          require("php/session.php");
+          if(isset($_SESSION['message'])) {
+            echo("<br><br><br><p style='color:red;text-align:center'>" . $_SESSION['message'] . "</p>");
+            unset($_SESSION['message']);
+          }
+          ?>
         </form>
       </div>
       <div class="register hidden">
@@ -41,7 +48,7 @@
           <fieldset class="pure-group">
               <input type="text" class="pure-input-1" required placeholder="Kennitala" name="id">
               <input type="text" class="pure-input-1" required placeholder="Nafn" name="name">
-              <input type="text" class="pure-input-1" required placeholder="Netfang" name="email">
+              <input type="email" class="pure-input-1" required placeholder="Netfang" name="email">
               <input type="password" class="pure-input-1" required placeholder="Lykilorð" name="password">
           </fieldset>
           <button type="submit" class="pure-button pure-input-1 pure-button-primary">Nýskráning</button>

@@ -14,5 +14,6 @@ try {
 catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-
+header('Content-Type: text/html; charset=utf-8');
+global $_SESSION;
 session_start();

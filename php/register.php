@@ -20,7 +20,9 @@
         $row = $uniqueCheck->fetch();
       }
       catch(PDOException $ex) {
-        die("Query failed: " . $ex->getMessage());
+        $_SESSION['message'] = "Query failed: " . $ex->getMessage();
+        header("Location: ../form.php");
+        die();
       }
       if(!$row) {
         $query = "INSERT INTO users (id, password, email, name)
@@ -33,6 +35,8 @@
           $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         }
         else {
+          $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur.";
+          header("Location: ../form.php");
           die();
         }
         try {
@@ -45,13 +49,24 @@
           ));
         }
         catch(PDOException $ex) {
-          die("Insert failed: " . $ex->getMessage());
+          $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur.";
+          header("Location: ../form.php");
+          die();
         }
-        header("Location: ../form.htm");
+        $_SESSION['message'] = "Success";
+        header("Location: ../form.php");
+        die();
+      }
+      else {
+        $_SESSION['message'] = "Notandi er núþegar í gagnagrunni.";
+        header("Location: ../form.php");
         die();
       }
     }
-    die("Vinsamlegast fylltu inn kennitölu og lykilorð");
+    $_SESSION['message'] = "Vinsamlegast sláðu inn allar upplýsingarnar til að skrá þig.";
+    header("Location: ../form.php");
+    die();
   }
+  header("Location: ../form.php");
   die();
 ?>
