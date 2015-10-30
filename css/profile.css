@@ -1,0 +1,37 @@
+body {
+  color: #666;
+  background-color: #fefefe;
+}
+.wrapper {
+  margin:auto;
+  width:80%;
+}
+.header {
+  background-color: #e74c3c;
+  height:50px;
+  border-bottom:1px solid #ddd;
+}
+.textwrap {
+  clear:both;
+  margin:0 10px 0 10px;
+}
+.right, .left, .center {
+  width:33.33333%;
+  float:left;
+  color:#eee;
+}
+.center {
+  text-align:center;
+}
+.right {
+  text-align:right;
+}
+.textwrap a {
+  color:#cecece;
+}
+.textwrap a:hover {
+  color:#fff;
+}
+.pure-button {
+  background-color: #e74c3c;
+}

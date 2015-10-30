@@ -20,7 +20,7 @@
         $row = $uniqueCheck->fetch();
       }
       catch(PDOException $ex) {
-        $_SESSION['message'] = "Query failed: " . $ex->getMessage();
+        $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur.";
         header("Location: ../form.php");
         die();
       }
@@ -53,7 +53,7 @@
           header("Location: ../form.php");
           die();
         }
-        $_SESSION['message'] = "Success";
+        $_SESSION['message'] = "Notandi skráður.";
         header("Location: ../form.php");
         die();
       }
@@ -67,6 +67,7 @@
     header("Location: ../form.php");
     die();
   }
+  $_SESSION['message'] = "Vinsamlegast sláðu inn allar upplýsingarnar til að skrá þig.";
   header("Location: ../form.php");
   die();
 ?>

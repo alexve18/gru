@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/forms.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   </head>
   <body>
     <script>
@@ -22,6 +23,11 @@
         });
       })
     </script>
+    <div class="backWrap">
+        <a href="index.htm">
+          <p class="backButton"><i class="material-icons">arrow_back</i>Aftur á forsíðu</p>
+        </a>
+    </div>
     <div class="wrapperoni">
       <div class="login">
         <form class="pure-form" action="php/login.php" method="POST">

@@ -29,3 +29,21 @@ p {
 .hidden {
   display:none;
 }
+
+.backwrap {
+  position:relative;
+  top:0;
+  left:0;
+  overflow:hidden;
+}
+.backButton {
+  position:absolute;
+  top:30px;
+  left:10px;
+}
+a, a:visited {
+  color:#ea2f29;
+}
+a:hover {
+  color:#a60b05;
+}
