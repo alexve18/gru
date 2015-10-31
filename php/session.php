@@ -1,7 +1,7 @@
 <?php
-$servername = "tsuts.tskoli.is";
-$username = "1909942289";
-$password = "dicks";
+$servername = "example.com;
+$username = "foo";
+$password = "bar";
 
 try {
     $connection = new PDO(
