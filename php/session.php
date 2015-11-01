@@ -1,7 +1,7 @@
 <?php
-$servername = "example.com";
-$username = "foo";
-$password = "bar";
+$servername = "";
+$username = "";
+$password = "";
 
 try {
     $connection = new PDO(
