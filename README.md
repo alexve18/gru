@@ -6,7 +6,7 @@ Features:
 * Login and register functionality written in PHP
 * Information stored in a MySQL database in a one-to-many configuration
 * Animations and styling in CSS
-* ~~Useless javascript bullshit~~
+* ~~Useless javascript bullshit~~ THIS IS NOT USLESS
 * jQuery stuff
 * Responsive HTML design via a grid system
 
