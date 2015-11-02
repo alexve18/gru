@@ -55,20 +55,6 @@
                 </tr>
             </tbody>
           </table>
-          <form action="set.php" method="GET">
-            <select>
-              <!-- TODO: implement event option selection with a way for users to actually register to events -->
-              <?php
-                $query = "SELECT * FROM events";
-                $result = $connection->query($query);
-                $row = $result->fetchAll();
-                foreach($row as $option) {
-                  echo("<option value=\"" . $option['id'] . "\">" . $option['id'] . " - " . $option['name'] . " - " . $option['date'] . "</option>");
-                }
-              ?>
-            </select>
-            <input type="submit">
-          </form>
         </div>
         <div class="pure-u-1 pure-u-xl-1-24">
         </div>
