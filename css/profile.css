@@ -4,7 +4,8 @@ body {
 }
 .wrapper {
   margin:auto;
-  width:80%;
+  margin-bottom:20px;
+  width:65%;
 }
 .header {
   background-color: #e74c3c;
@@ -34,4 +35,15 @@ body {
 }
 .pure-button {
   background-color: #e74c3c;
+}
+.info {
+  text-align:right;
+}
+@media screen and (max-width:1280px) {
+  .wrapper {
+    width:640px;
+  }
+  .info {
+    text-align:left;
+  }
 }

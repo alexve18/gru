@@ -4,13 +4,13 @@
   if(isset($_POST) && isset($_SESSION['user'])) {
     $user = $_SESSION['user'];
     if($user != $_POST['uid']) {
-      $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur #1";
+      $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur.";
       header("Location: ../form.php");
       die();
     }
     if(empty($_POST['name']) || empty($_POST['uid']) || empty($_POST['email'])) {
       $_SESSION['message'] = "Þú verður að slá inn nafn og netfang";
-      header("Location: ../form.php");
+      header("Location: ../profile.php");
       die();
     }
     $name = $_POST['name'];
@@ -39,15 +39,12 @@
         ':id'=>$user,
       ));
     } catch (PDOException $e) {
-      $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur";
-      echo($e);
-      exit();
-
-      ///header("Location: ../form.php");
-      //die();
+      $_SESSION['message'] = "Eitthvað fór úrskeiðis, reyndu aftur.";
+      header("Location: ../profile.php");
+      die();
     }
     $_SESSION['event'] = 1;
-    header("Location: logout.php");
+    header("Location: ../form.php");
     die();
   }
   else {
