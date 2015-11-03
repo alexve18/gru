@@ -5,7 +5,7 @@
 $servername = "";
 $username = "";
 $password = "";
-$db = ""
+$db = "";
 
 try {
     $connection = new PDO(
