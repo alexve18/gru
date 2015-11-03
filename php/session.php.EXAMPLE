@@ -1,5 +1,5 @@
 <?php
-//This file contains an example of the database Connection
+//This file contains an example of the database connection
 //Please edit the values and then remove the .EXAMPLE from the filename
 
 $servername = "";
