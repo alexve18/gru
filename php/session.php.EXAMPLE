@@ -1,8 +1,11 @@
 <?php
-$servername = "tsuts.tskoli.is";
-$username = "1909942289";
-$password = "tsuru";
-$db = "1909942289_gru"
+//This file contains an example of the database Connection
+//Please edit the values and then remove the .EXAMPLE from the filename
+
+$servername = "";
+$username = "";
+$password = "";
+$db = ""
 
 try {
     $connection = new PDO(
